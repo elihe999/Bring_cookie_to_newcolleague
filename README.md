@@ -15,3 +15,7 @@ js
 * https://npm.taobao.org/mirrors/node/v10.16.0/node-v10.16.0-linux-x64.tar.xz
 * http://npm.taobao.org/mirrors/chromedriver
 * https://npm.taobao.org/mirrors/npm/
+
+vue
+* Vue.js devtool
+* Vue-cli
