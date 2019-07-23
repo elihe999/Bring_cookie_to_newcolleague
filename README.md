@@ -9,6 +9,7 @@ editor
 
 php
 * https://github.com/xdebug/xdebug
+* https://pkg.phpcomposer.com/
 
 js
 * http://npm.taobao.org/   (china env)
