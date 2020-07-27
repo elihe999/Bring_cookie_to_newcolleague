@@ -10,5 +10,4 @@
 * [Eclipse](https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2020-06/R/eclipse-inst-win64.exe)
 * [NSIS](https://nsis.sourceforge.io/Download)
 
-* [p4merge](https://www.perforce.com/downloads/visual-merge-tool)
 * [diffmerge](http://www.sourcegear.com/diffmerge/)
