@@ -24,7 +24,7 @@
 * [composer](https://pkg.phpcomposer.com/)
 
 ### js
-* http://npm.taobao.org/   (china env)
+* [Taobao npm mirrors](http://npm.taobao.org/)
 * https://npm.taobao.org/mirrors/node/v10.16.0/node-v10.16.0-linux-x64.tar.xz
 * http://npm.taobao.org/mirrors/chromedriver
 * https://npm.taobao.org/mirrors/npm/
