@@ -1,7 +1,7 @@
 # Bring_cookie_to_newcolleague
-Build auto setup script
+> Todo
 
-##
+[] Build auto setup script
 
 
 ## Online Resource
@@ -12,14 +12,16 @@ Build auto setup script
 
 
 ### editor
-* https://code.visualstudio.com/
-* https://github.com/junegunn/vim-plug
-* http://github.com/VundleVim/Vundle.Vim
-* https://marketplace.visualstudio.com/vscode
+* [vscode](https://code.visualstudio.com/)
+
+
+#### vim (vim8, currently no reason to swtich to neovim)
+* [vim plug](https://github.com/junegunn/vim-plug)
+* [Vundle](http://github.com/VundleVim/Vundle.Vim)
 
 ### php
-* https://github.com/xdebug/xdebug
-* https://pkg.phpcomposer.com/
+* [xdebug](https://github.com/xdebug/xdebug)
+* [composer](https://pkg.phpcomposer.com/)
 
 ### js
 * http://npm.taobao.org/   (china env)
