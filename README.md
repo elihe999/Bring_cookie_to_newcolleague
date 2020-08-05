@@ -6,6 +6,12 @@
 
 ## Online Resource
 
+* [over](https://overapi.com/)
+
+### OJ
+* [leetcode](https://leetcode-cn.com/)
+* [codewar](https://www.hackerrank.com/)
+
 ### Chart
 
 * [processon](https://www.processon.com/)
