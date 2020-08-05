@@ -34,7 +34,8 @@
 * https://npm.taobao.org/mirrors/node/v10.16.0/node-v10.16.0-linux-x64.tar.xz
 * http://npm.taobao.org/mirrors/chromedriver
 * https://npm.taobao.org/mirrors/npm/
-* https://github.com/nvm-sh/nvm
+* [window](https://github.com/coreybutler/nvm-windows/releases) see https://github.com/nvm-sh/nvm
+
 
 #### vue
 * Vue.js devtool
