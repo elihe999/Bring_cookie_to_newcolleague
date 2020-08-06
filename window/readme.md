@@ -18,3 +18,7 @@
 
 <https://github.com/curl/curl-for-win>
 <https://curl.haxx.se/windows/>
+
+> current file *curl-7.71.1-win32-mingw.zip*
+Size: 3.0 MB
+sha256: 173bad71b5e481a513a79d730e901c263bc934b5d06141e489f86cfcee2da38f
