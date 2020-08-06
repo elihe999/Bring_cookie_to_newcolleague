@@ -1,0 +1,168 @@
+dn: dc=maxcrc,dc=com
+objectClass: domain
+objectClass: top
+dc: maxcrc
+
+dn: ou=support,dc=maxcrc,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: support
+description: Container for user entries
+
+dn: cn=wuhaijian,ou=support,dc=maxcrc,dc=com
+description: 测试部经理
+sn: ken
+cn: wuhaijian
+telephoneNumber: 5301
+objectClass: person
+userPassword: 5301
+
+dn: cn=wushaozhen,ou=support,dc=maxcrc,dc=com
+description: 测试组组长
+sn: william
+cn: wushaozhen
+telephoneNumber: 5309
+objectClass: person
+userPassword: 5309
+
+dn: cn=fanwei,ou=support,dc=maxcrc,dc=com
+description: 测试组组长
+sn: jack
+cn: fanwei
+telephoneNumber: 5305
+objectClass: person
+userPassword: 5305
+
+dn: cn=guishusheng,ou=support,dc=maxcrc,dc=com
+description:测试工程师 
+sn: gavin
+cn: guishusheng
+telephoneNumber: 5384
+objectClass: person
+userPassword: 5384
+
+dn: cn=xupengcheng,ou=support,dc=maxcrc,dc=com
+description: 测试工程师
+sn: owen
+cn: xupengcheng
+telephoneNumber: 5373
+objectClass: person
+userPassword: 5373
+
+dn: cn=zhongxianming,ou=support,dc=maxcrc,dc=com
+description: 技术支持工程师
+sn: kevin
+cn: zhongxianming
+telephoneNumber: 5307
+objectClass: person
+userPassword: 5307
+
+dn: cn=wuxiaoyan,ou=support,dc=maxcrc,dc=com
+description: 技术支持工程师
+sn: sara
+cn: wuxiaoyan
+telephoneNumber: 5310
+objectClass: person
+userPassword: 5310
+
+dn: cn=dengqiang,ou=support,dc=maxcrc,dc=com
+description: 技术支持工程师
+sn: dq
+cn: dengqiang
+telephoneNumber: 5371
+objectClass: person
+userPassword: 5371
+
+dn: cn=xiezhaomin,ou=support,dc=maxcrc,dc=com
+description: 测试工程师
+sn: juile
+cn: xiezhaomin
+telephoneNumber: 5370
+objectClass: person
+userPassword: 5370
+
+dn: cn=shengyipeng,ou=support,dc=maxcrc,dc=com
+description: 技术支持工程师
+sn: eric
+cn: shengyipeng
+telephoneNumber: 5380
+objectClass: person
+userPassword: 5380
+
+dn: cn=qiuhuanju,ou=support,dc=maxcrc,dc=com
+description: 测试工程师
+sn: alice
+cn: qiuhuanju
+telephoneNumber: 5342
+objectClass: person
+userPassword: 5342
+
+dn: cn=huangmin,ou=support,dc=maxcrc,dc=com
+description: 测试工程师
+sn: apple
+cn: huangmin
+telephoneNumber: 5340
+objectClass: person
+userPassword: 5340
+
+dn: cn=luohuan,ou=support,dc=maxcrc,dc=com
+description: 测试工程师
+sn: bella
+cn: luohuan
+telephoneNumber: 5341
+objectClass: person
+userPassword: 5341
+
+dn: cn=yanglixiang,ou=support,dc=maxcrc,dc=com
+description: 测试工程师
+sn: rice
+cn: yanglixiang
+telephoneNumber: 5346
+objectClass: person
+userPassword: 5346
+
+dn: cn=zhousongmei,ou=support,dc=maxcrc,dc=com
+description: 测试工程师
+sn: kira
+cn: zhousongmei
+telephoneNumber: 5375
+objectClass: person
+userPassword: 5375
+
+dn: cn=chenhongliang,ou=support,dc=maxcrc,dc=com
+description: 测试工程师
+sn: rain
+cn: chenhongliang
+telephoneNumber: 5372
+objectClass: person
+userPassword: 5372
+
+dn: ou=sale,dc=maxcrc,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: sale
+description: Container for user entries
+
+dn: cn=hejianping,ou=sale,dc=maxcrc,dc=com
+description: 市场总监
+sn: rain
+cn: hejianping
+telephoneNumber: 5201
+objectClass: person
+userPassword: 5201
+
+dn: cn=kuangming,ou=sale,dc=maxcrc,dc=com
+description: 营销经理
+sn: kevin
+cn: kuangming
+telephoneNumber: 5202
+objectClass: person
+userPassword: 5202
+
+dn: cn=chengxiangqian,ou=sale,dc=maxcrc,dc=com
+description: 营销经理
+sn: xiangqian
+cn: chenxiangqian
+telephoneNumber: 5203
+objectClass: person
+userPassword: 5203

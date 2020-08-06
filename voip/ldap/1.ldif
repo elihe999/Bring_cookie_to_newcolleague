@@ -1,0 +1,13 @@
+dn: dc=maxcrc,dc=com
+dc: maxcrc
+objectClass: top
+objectClass: domain
+
+dn: cn=aayang,dc=maxcrc,dc=com
+cn: aayang
+description: chouchou
+sn: chou
+telephoneNumber: 15930189920
+telephoneNumber: 15930
+telephoneNumber: 1
+
