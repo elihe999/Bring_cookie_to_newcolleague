@@ -11,3 +11,10 @@
 * [NSIS](https://nsis.sourceforge.io/Download)
 
 * [diffmerge](http://www.sourcegear.com/diffmerge/)
+
+
+
+##### curl
+
+<https://github.com/curl/curl-for-win>
+<https://curl.haxx.se/windows/>
