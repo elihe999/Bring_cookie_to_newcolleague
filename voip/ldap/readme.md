@@ -329,3 +329,132 @@ LDAP_REFERRAL_LIMIT_EXCEEDED = 0x61//客户追踪的
 }
 LDAP_RETCODE;
 ```
+
+## Example
+
+[Mozilla_LDAP](https://wiki.mozilla.org/Mozilla_LDAP_SDK_Programmer%27s_Guide/Searching_the_Directory_With_LDAP_C_SDK)
+[Mozilla_C_SDK](https://www-archive.mozilla.org/directory/csdk-docs/function)
+
+> Chapter 3 - A Short Example
+This chapter provides a simple example of an LDAP client written with the Mozilla LDAP C SDK.
+
+The chapter contains the following sections:
+
+[Understanding the Sample Client](https://www-archive.mozilla.org/directory/csdk-docs/example#understand_sample_client)
+[Compiling the Sample Client](https://www-archive.mozilla.org/directory/csdk-docs/example#compile_sample_client)
+[Running the Sample Client](https://www-archive.mozilla.org/directory/csdk-docs/example#run_sample_client)
+
+### Understanding the Sample Client
+
+The following is the source code for a command-line program (a console application) that retrieves the full name, last name, email address, and telephone number of Barbara Jensen.
+
+>Code Example 3-1 - A console application that retrieves an entry
+```c
+ #include <stdio.h> 
+ #include "ldap.h"  
+ /* Adjust these setting for your own LDAP server */ 
+ #define HOSTNAME "localhost" 
+ #define PORT_NUMBER  LDAP_PORT 
+ #define FIND_DN "uid=bjensen, ou=People, dc=example,dc=com" 
+ int 
+ main( int argc, char **argv ) 
+ { 
+   LDAP         *ld; 
+   LDAPMessage  *result, *e; 
+   BerElement   *ber; 
+   char         *a; 
+   char         **vals; 
+   int          i, rc; 
+   /* Get a handle to an LDAP connection. */ 
+   if ( (ld = ldap_init( HOSTNAME, PORT_NUMBER )) == NULL ) { 
+     perror( "ldap_init" ); 
+     return( 1 ); 
+   } 
+   /* Bind anonymously to the LDAP server. */ 
+   rc = ldap_simple_bind_s( ld, NULL, NULL ); 
+   if ( rc != LDAP_SUCCESS ) { 
+     fprintf(stderr, "ldap_simple_bind_s: %s\n", ldap_err2string(rc)); 
+     return( 1 ); 
+   } 
+   /* Search for the entry. */ 
+   if ( ( rc = ldap_search_ext_s( ld, FIND_DN, LDAP_SCOPE_BASE, 
+     "(objectclass=*)", NULL, 0, NULL, NULL, LDAP_NO_LIMIT, 
+     LDAP_NO_LIMIT, &result ) ) != LDAP_SUCCESS ) { 
+     fprintf(stderr, "ldap_search_ext_s: %s\n", ldap_err2string(rc)); 
+     return( 1 ); 
+   } 
+   /* Since we are doing a base search, there should be only 
+      one matching entry.  */ 
+   e = ldap_first_entry( ld, result ); 
+   if ( e != NULL ) { 
+     printf( "\nFound %s:\n\n", FIND_DN ); 
+     /* Iterate through each attribute in the entry. */ 
+     for ( a = ldap_first_attribute( ld, e, &ber ); 
+       a != NULL; a = ldap_next_attribute( ld, e, ber ) ) { 
+       /* For each attribute, print the attribute name and values. */ 
+       if ((vals = ldap_get_values( ld, e, a)) != NULL ) { 
+         for ( i = 0; vals[i] != NULL; i++ ) { 
+           printf( "%s: %s\n", a, vals[i] ); 
+         } 
+         ldap_value_free( vals ); 
+       } 
+       ldap_memfree( a ); 
+     } 
+     if ( ber != NULL ) { 
+       ber_free( ber, 0 ); 
+     } 
+   } 
+   ldap_msgfree( result ); 
+   ldap_unbind( ld ); 
+   return( 0 ); 
+ }
+
+```
+
+### Compiling the Sample Client
+How you compile the example program depends on the operating system on which you compile. Below are examples of compiling on Solaris and Windows NT systems.
+
+### Compiling on Solaris
+The examples directory contains a sample UNIX makefile. You can modify the makefile to compile the example in this section by adjusting the flags specified in this file as needed. The makefile assumes that the LDAP API header files are located in the ../include directory.
+
+For example, you can use the following Solaris makefile for this example:
+
+> Code Example 3-2 - An example Solaris makefile
+```makefile
+ # Makefile for the example in this chapter.
+ #
+ EXTRACFLAGS=
+ EXTRALDFLAGS=-lsocket -lnsl
+ LDAPLIB=ldap50 -lplc4 -lplds4 -lnspr4
+ INCDIR=../include
+ LIBDIR=../lib
+ LIBS=-L$(LIBDIR) $(LDAPLIB) $(EXTRALDFLAGS)
+ OPTFLAGS=-g
+ CFLAGS=$(OPTFLAGS) -I$(INCDIR) $(EXTRACFLAGS)
+ CC=cc
+ PROGS=rdentry
+ all:          $(PROGS)
+ rdentry:      rdentry.o
+               $(CC) -o rdentry rdentry.o $(LIBS)
+ clean:        /bin/rm -f $(PROGS) *.o a.out core
+```
+### Compiling on Windows NT
+If you are compiling this on Windows NT, set up a makefile for this application. Make sure to do the following:
+
+If you are using Microsoft Visual C++, create a new project workspace for a console application. Add the source file to the project.
+Set your options to include lib as one of the directories containing library files and include as one of the directories containing include files.
+Link to nsldap32v50.lib, the LDAP API import library for Windows.
+#### Running the Sample Client
+First, make sure your LDAP server is set up with the entry that the example attempts to find. For example, if you are running Netscape Directory Server, make sure the Arius.ldif file is imported in the database.
+
+#### Running on UNIX
+If you have compiled and linked the client on a UNIX platform, make sure to set your LD_LIBRARY_PATH variable to the location of the libldap50.so, plc3, plds3, and nspr4 library files. (As an alternative, when linking the file, specify the flag that identifies the library directories that the run-time linker should search. For example, on Solaris, use the -R flag to specify the location of the libldap50.so file.)
+
+#### Running on Windows NT
+If you have linked the client with the nsldap32v50.lib import library on Windows NT, make sure to copy the nsldap32v50.dll dynamic link library file to one of the following directories:
+
+The directory from which the application loaded.
+The current directory.
+The 32-bit Windows system directory (in Windows NT, this directory is typically winnt\system32).
+The Windows directory.
+The directories listed in the PATH environment variable.
