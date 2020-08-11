@@ -10,7 +10,20 @@
 
 ## My Question
 
+> 1 FTH: (536688): *** Fault tolerant heap shim applied to current process. This is usually due to previous crashes. ***
+
 ## searchRequest? baseObject or wholeSubtree
+
+### api
+
+winldap.h
+```c
+#define LDAP_SCOPE_BASE 0x00
+#define LDAP_SCOPE_ONELEVEL 0x01
+#define LDAP_SCOPE_SUBTREE 0x02
+```
+
+#### structure
 
 <https://curl.haxx.se/rfc/rfc4516.txt>
 
@@ -183,6 +196,8 @@ Exact Match Search	| NoYes
 [ldapbrowser](http://www.ldapbrowserwindows.com/)
 <https://packages.debian.org/buster/libldap2-dev>
 
+
+<https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_73/apis/ldap_search_ext_s.htm>
 
 ## curl log
 
