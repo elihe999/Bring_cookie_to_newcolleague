@@ -19,5 +19,24 @@ sudo apt install python3-pip
 ## conda
 
 conda config --show
-
+```bash
 conda config --add channels https://mirrors.ustc.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
+```
+
+echo ". /home/eli/anaconda3/etc/profile.d/conda.sh" >> ~/.bashrc
+sudo ln -s /home/eli/anaconda3/etc/profile.d/conda.sh /etc/profile.d/conda.sh
+echo "conda activate" >> ~/.bashrc
+
+
+### cmd
+
+conda env list
+conda create -n <name> python=
+conda activate <model_name>
+conda deactivate 
+conda remove -n <env_name> --all
