@@ -3,7 +3,10 @@
 <http://sipp.sourceforge.net/index.html>
 <http://sipp.sourceforge.net/doc/reference.html>
 <https://sourceforge.net/projects/sipp/files/sipp/>
+
 ## install
+
+> sudo apt-get install libncurses5-dev
 
 On Linux, SIPp is provided in the form of source code. You will need to compile SIPp to actually use it.
 Pre-requisites to compile SIPp are :
