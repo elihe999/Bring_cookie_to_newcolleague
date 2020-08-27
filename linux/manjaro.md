@@ -1,12 +1,13 @@
 # manjaro
 
-- yay
-
 ## yay
 
-yay --aururl "https://aur.tuna.tsinghua.edu.cn" --save
+- yay
 
-## pacman
+pacman -S yay
+
+### apache
+
 升级完后，安装Apache
 
 Copy
@@ -15,7 +16,7 @@ pacman -S apache
 
 Copy
 nano /etc/httpd/conf/httpd.conf
-# 我这里用的nano，你可用其它的编辑器只要能编辑文本就行
+//我这里用的nano，你可用其它的编辑器只要能编辑文本就行
 找到LoadModule unique_id_module modules/mod_unique_id.so 注释了
 
 #LoadModule unique_id_module modules/mod_unique_id.so
@@ -36,6 +37,7 @@ Active: active (running) 有这个就意思成功运行
 
 nano /srv/http/index.html
 
+## pacman
 
 . 软件包基础搜索及安装卸载
 $ pacman -Ss 软件名称 //(搜索软件包)
@@ -226,3 +228,12 @@ $ sudo journalctl |grep 'upgraded chromium'
 Jun 15 06:39:47 tompc pacman[5551]: upgraded chromium (75.0.3770.80-1 -> 75.0.3770.90-2)
 Jun 19 10:20:45 tompc pacman[1904]: upgraded chromium (75.0.3770.90-2 -> 75.0.3770.90-3)
 Jun 23 17:18:33 tompc pacman[7079]: upgraded chromium (75.0.3770.90-3 -> 75.0.3770.100-1)
+
+## snap
+
+sudo pacman -S snapd
+sudo systemctl enable --now snapd.socket
+sudo ln -s /var/lib/snapd/snap /snap
+sudo snap install android-studio --classic
+
+<https://snapcraft.io/>
