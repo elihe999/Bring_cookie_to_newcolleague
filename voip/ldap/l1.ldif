@@ -1,0 +1,127 @@
+dn: cn=wuhaijian,dc=maxcrc,dc=com
+description: 测试部经理
+sn: ken	
+cn: wuhaijian
+telephoneNumber: 1616
+objectClass: person
+userPassword: 5301
+
+dn: cn=wushaozhen,dc=maxcrc,dc=com
+description: 测试组组长
+sn: william
+cn: wushaozhen
+telephoneNumber: 1661
+objectClass: person
+userPassword: 5309
+
+dn: cn=fanwei,dc=maxcrc,dc=com
+description: 测试组组长
+sn: jack
+cn: fanwei
+telephoneNumber: 5305
+objectClass: person
+userPassword: 5305
+
+dn: cn=guishusheng,dc=maxcrc,dc=com
+description:测试工程师 
+sn: gavin
+cn: guishusheng
+telephoneNumber: 5384
+objectClass: person
+userPassword: 5384
+
+dn: cn=xupengcheng,dc=maxcrc,dc=com
+description: 测试工程师
+sn: owen
+cn: xupengcheng
+telephoneNumber: 5373
+objectClass: person
+userPassword: 5373
+
+dn: cn=zhongxianming,dc=maxcrc,dc=com
+description: 技术支持工程师
+sn: kevin
+cn: zhongxianming
+telephoneNumber: 5307
+objectClass: person
+userPassword: 5307
+
+dn: cn=wuxiaoyan,dc=maxcrc,dc=com
+description: 技术支持工程师
+sn: sara
+cn: wuxiaoyan
+telephoneNumber: 5310
+objectClass: person
+userPassword: 5310
+
+dn: cn=dengqiang,dc=maxcrc,dc=com
+description: 技术支持工程师
+sn: dq
+cn: dengqiang
+telephoneNumber: 5371
+objectClass: person
+userPassword: 5371
+
+dn: cn=xiezhaomin,dc=maxcrc,dc=com
+description: 测试工程师
+sn: juile
+cn: xiezhaomin
+telephoneNumber: 5370
+objectClass: person
+userPassword: 5370
+
+dn: cn=shengyipeng,dc=maxcrc,dc=com
+description: 技术支持工程师
+sn: eric
+cn: shengyipeng
+telephoneNumber: 5380
+objectClass: person
+userPassword: 5380
+
+dn: cn=qiuhuanju,dc=maxcrc,dc=com
+description: 测试工程师
+sn: alice
+cn: qiuhuanju
+telephoneNumber: 5342
+objectClass: person
+userPassword: 5342
+
+dn: cn=huangmin,dc=maxcrc,dc=com
+description: 测试工程师
+sn: apple
+cn: huangmin
+telephoneNumber: 5340
+objectClass: person
+userPassword: 5340
+
+dn: cn=luohuan,dc=maxcrc,dc=com
+description: 测试工程师
+sn: bella
+cn: luohuan
+telephoneNumber: 5341
+objectClass: person
+userPassword: 5341
+
+dn: cn=yanglixiang,dc=maxcrc,dc=com
+description: 测试工程师
+sn: rice
+cn: yanglixiang
+telephoneNumber: 5346
+objectClass: person
+userPassword: 5346
+
+dn: cn=zhousongmei,dc=maxcrc,dc=com
+description: 测试工程师
+sn: kira
+cn: zhousongmei
+telephoneNumber: 5375
+objectClass: person
+userPassword: 5375
+
+dn: cn=chenhongliang,dc=maxcrc,dc=com
+description: 测试工程师
+sn: rain
+cn: chenhongliang
+telephoneNumber: 5372
+objectClass: person
+userPassword: 5372

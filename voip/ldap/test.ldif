@@ -1,0 +1,33 @@
+dn: dc=grandstream,dc=com
+objectClass: domain
+objectClass: top
+dc: grandstream
+
+dn: ou=China,dc=grandstream,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: China
+description: Container for China Grandstream
+
+dn: ou=USA,dc=grandstream,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: USA
+description: Container for USA Grandstream
+
+dn: ou=ShenZhen,ou=China,dc=grandstream,dc=com
+description: 潮流网络技术有限公司（中国区 深圳部）
+Province：深圳
+Country：中国
+
+dn: ou=HangZhou,ou=China,dc=grandstream,dc=com
+description: 潮流网络技术有限公司（中国区 杭研所）
+Province：深圳
+Country：中国
+
+dn: ou=Boston,ou=USA,dc=grandstream,dc=com
+description: 潮流网络技术有限公司（Boston America）
+Province：Boston
+Country：America
+
+

@@ -1,0 +1,169 @@
+dn: dc=maxcrc,dc=com
+dc: maxcrc
+objectClass: domain
+objectClass: top
+
+dn: ou=support, dc=maxcrc,dc=com
+ou: support
+objectClass: top
+objectClass: organizationalUnit
+description: Container for user entries
+
+dn: cn=wuhaijian,ou=support, dc=maxcrc,dc=com
+telephoneNumber: 5301
+userPassword:: NTMwMQ==
+description:: 5rWL6K+V6YOo57uP55CG
+objectClass: person
+sn: ken
+cn: wuhaijian
+
+dn: cn=wushaozhen,ou=support, dc=maxcrc,dc=com
+telephoneNumber: 5309
+userPassword:: NTMwOQ==
+description:: 5rWL6K+V57uE57uE6ZW/
+objectClass: person
+sn: william
+cn: wushaozhen
+
+dn: cn=fanwei,ou=support, dc=maxcrc,dc=com
+telephoneNumber: 5305
+userPassword:: NTMwNQ==
+description:: 5rWL6K+V57uE57uE6ZW/
+objectClass: person
+sn: jack
+cn: fanwei
+
+dn: cn=guishusheng,ou=support, dc=maxcrc,dc=com
+telephoneNumber: 5384
+userPassword:: NTM4NA==
+description:: 5rWL6K+V5bel56iL5biIIA==
+objectClass: person
+sn: gavin
+cn: guishusheng
+
+dn: cn=xupengcheng,ou=support, dc=maxcrc,dc=com
+telephoneNumber: 5373
+userPassword:: NTM3Mw==
+description:: 5rWL6K+V5bel56iL5biI
+objectClass: person
+sn: owen
+cn: xupengcheng
+
+dn: cn=zhongxianming,ou=support, dc=maxcrc,dc=com
+telephoneNumber: 5307
+userPassword:: NTMwNw==
+description:: 5oqA5pyv5pSv5oyB5bel56iL5biI
+objectClass: person
+sn: kevin
+cn: zhongxianming
+
+dn: cn=wuxiaoyan,ou=support, dc=maxcrc,dc=com
+telephoneNumber: 5310
+userPassword:: NTMxMA==
+description:: 5oqA5pyv5pSv5oyB5bel56iL5biI
+objectClass: person
+sn: sara
+cn: wuxiaoyan
+
+dn: cn=dengqiang,ou=support, dc=maxcrc,dc=com
+telephoneNumber: 5371
+userPassword:: NTM3MQ==
+description:: 5oqA5pyv5pSv5oyB5bel56iL5biI
+objectClass: person
+sn: dq
+cn: dengqiang
+
+dn: cn=xiezhaomin,ou=support, dc=maxcrc,dc=com
+telephoneNumber: 5370
+userPassword:: NTM3MA==
+description:: 5rWL6K+V5bel56iL5biI
+objectClass: person
+sn: juile
+cn: xiezhaomin
+
+dn: cn=shengyipeng,ou=support, dc=maxcrc,dc=com
+telephoneNumber: 5380
+userPassword:: NTM4MA==
+description:: 5oqA5pyv5pSv5oyB5bel56iL5biI
+objectClass: person
+sn: eric
+cn: shengyipeng
+
+dn: cn=qiuhuanju,ou=support, dc=maxcrc,dc=com
+telephoneNumber: 5342
+userPassword:: NTM0Mg==
+description:: 5rWL6K+V5bel56iL5biI
+objectClass: person
+sn: alice
+cn: qiuhuanju
+
+dn: cn=huangmin,ou=support, dc=maxcrc,dc=com
+telephoneNumber: 5340
+userPassword:: NTM0MA==
+description:: 5rWL6K+V5bel56iL5biI
+objectClass: person
+sn: apple
+cn: huangmin
+
+dn: cn=luohuan,ou=support, dc=maxcrc,dc=com
+telephoneNumber: 5341
+userPassword:: NTM0MQ==
+description:: 5rWL6K+V5bel56iL5biI
+objectClass: person
+sn: bella
+cn: luohuan
+
+dn: cn=yanglixiang,ou=support, dc=maxcrc,dc=com
+telephoneNumber: 5346
+userPassword:: NTM0Ng==
+description:: 5rWL6K+V5bel56iL5biI
+objectClass: person
+sn: rice
+cn: yanglixiang
+
+dn: cn=zhousongmei,ou=support, dc=maxcrc,dc=com
+telephoneNumber: 5375
+userPassword:: NTM3NQ==
+description:: 5rWL6K+V5bel56iL5biI
+objectClass: person
+sn: kira
+cn: zhousongmei
+
+dn: cn=chenhongliang,ou=support, dc=maxcrc,dc=com
+telephoneNumber: 5372
+userPassword:: NTM3Mg==
+description:: 5rWL6K+V5bel56iL5biI
+objectClass: person
+sn: rain
+cn: chenhongliang
+
+dn: ou=sale, dc=maxcrc,dc=com
+ou: sale
+objectClass: top
+objectClass: organizationalUnit
+description: Container for user entries
+
+dn: cn=hejianping,ou=sale, dc=maxcrc,dc=com
+telephoneNumber: 5201
+userPassword:: NTIwMQ==
+description:: 5biC5Zy65oC755uR
+objectClass: person
+sn: rain
+cn: hejianping
+
+dn: cn=kuangming,ou=sale, dc=maxcrc,dc=com
+telephoneNumber: 5202
+userPassword:: NTIwMg==
+description:: 6JCl6ZSA57uP55CG
+objectClass: person
+sn: kevin
+cn: kuangming
+
+dn: cn=chengxiangqian,ou=sale, dc=maxcrc,dc=com
+telephoneNumber: 5203
+description:: 6JCl6ZSA57uP55CG
+objectClass: person
+sn: xiangqian
+cn: chenxiangqian
+cn: chengxiangqian
+
