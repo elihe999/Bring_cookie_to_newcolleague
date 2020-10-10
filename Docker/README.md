@@ -1,3 +1,6 @@
+
+# Debain/Ubuntu
+
 # Install
 
 ```bash
@@ -48,7 +51,8 @@ echo "deb [arch=armhf] https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/ubun
 
 sudo apt-get update
 sudo apt-get install docker-ce
-Fedora/CentOS/RHEL
+
+# Fedora/CentOS/RHEL
 以下内容根据 官方文档 修改而来。
 
 如果你之前安装过 docker，请先删掉
