@@ -37,3 +37,60 @@ nvm use 版本号
 ```bash
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
+
+yarn config set registry https://registry.npm.taobao.org
+
+
+
+npm install -g yrm
+
+yrm ls
+
+**安装 yrm：**
+
+```java
+npm install -g yrm
+1
+```
+
+**列出所有镜像源：**
+
+```java
+yrm ls
+1
+```
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191101002732802.png)
+**切换镜像：**
+
+```java
+yrm use taobao
+1
+```
+
+**新增镜像：**
+
+```java
+yrm add aliyun http://maven.aliyun.com/nexus/content/groups/public
+1
+```
+
+**删除镜像：**
+
+```java
+yrm del taobao
+1
+```
+
+**测试延迟（访问速度）：**
+
+```java
+yrm test aliyun
+1
+```
+
+**查看帮助：**
+
+```java
+yrm -h
+```
