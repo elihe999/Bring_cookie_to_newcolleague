@@ -50,3 +50,7 @@ sudo vi /etc/hosts
  
 
 参考：https://www.cnblogs.com/sinferwu/p/12726833.html
+
+## 加速
+
+<http://github.global.ssl.fastly.net.ipaddress.com>
