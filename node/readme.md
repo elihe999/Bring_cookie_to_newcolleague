@@ -94,3 +94,13 @@ yrm test aliyun
 ```java
 yrm -h
 ```
+## issue
+
+nvm
+windows
+move to path there without whitespace
+
+or
+
+running cmd as administrator
+and then mklink it to the new path there without whitespace.
